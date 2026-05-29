@@ -1,14 +1,16 @@
-# Kafeneio Card Game (Ατού)
+# Kafeneio Card Game
 
-## Play
+A full-stack trick-taking card game featuring bidding mechanics, trump cards, AI opponents, real-time gameplay and a café-themed user experience.
 
-Το παιχνίδι είναι διαθέσιμο στο:
+---
 
-http://91.99.157.22:5173
+## Development Period
 
-ή
+May 2026
 
-https://thadoumeargoteragiadomainpragmatiko.pote
+## Estimated Development Effort
+
+50+ hours
 
 ---
 
@@ -32,52 +34,62 @@ https://thadoumeargoteragiadomainpragmatiko.pote
 
 ### Realtime Communication
 
-- WebSockets μέσω Socket.IO
-
----
-
-## Programming Languages
-
-Το project έχει αναπτυχθεί με:
-
-- TypeScript
-- JavaScript
-- HTML
-- CSS
+- Socket.IO
+- WebSockets
 
 ---
 
 ## Features
 
-- Single Player Mode
-- Bot Opponents
-- Real-time Game Engine
-- Trick Taking Logic
-- Trump Card System
-- Prediction/Bidding System
-- Score Tracking
-- Round History
-- Animated Table Scene
-- Responsive UI
+### Gameplay
+
+- Trick-taking card game mechanics
+- Trump card system
+- Bidding / prediction system
+- Round-based progression
+- Automatic score calculation
+- Winner detection
+
+### AI Opponents
+
+- Automated bidding
+- Card selection logic
+- Suit-following rules
+- Trump awareness
+
+### User Interface
+
+- Interactive game table
+- Animated card movement
+- SVG playing card deck
+- Score tracking
+- Round history
+- Turn timer
+- Responsive layout
+
+### Architecture
+
+- Server-authoritative game logic
+- Real-time synchronization
+- Room-based multiplayer architecture
+- Shared TypeScript models
 
 ---
 
 ## Project Structure
 
-/client
-- React Frontend
+```text
+client/
+ ├── public/
+ ├── src/
 
-/server
-- Game Logic
-- WebSocket Server
-- Bot AI
-
-/shared
-- Shared Types & Interfaces
+server/
+ ├── src/
+```
 
 ---
 
-## Run Locally
+## Installation
 
 ### Client
 
@@ -94,6 +106,19 @@ cd server
 npm install
 npm run dev
 ```
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---------|---------|
+| Frontend | React + TypeScript |
+| Styling | Tailwind CSS |
+| Animations | Framer Motion |
+| Backend | Node.js + TypeScript |
+| Realtime | Socket.IO |
+| Build Tool | Vite |
 
 ---
 
